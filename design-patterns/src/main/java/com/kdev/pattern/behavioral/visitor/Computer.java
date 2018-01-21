@@ -1,0 +1,23 @@
+package com.kdev.pattern.behavioral.visitor;
+
+/**
+ * @author trovo.st@gmail.com
+ * 2018-01-20
+ */
+public class Computer implements ComputerPart {
+
+    ComputerPart[] parts;
+
+    public Computer(){
+        parts = new ComputerPart[] {new Mouse(), new Keyboard(), new Monitor()};
+    }
+
+
+    @Override
+    public void accept(ComputerPartVisitor computerPartVisitor) {
+        for (int i = 0; i < parts.length; i++) {
+            parts[i].accept(computerPartVisitor);
+        }
+        computerPartVisitor.visit(this);
+    }
+}
