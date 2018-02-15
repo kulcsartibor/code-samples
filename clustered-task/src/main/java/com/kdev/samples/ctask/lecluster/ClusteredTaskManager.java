@@ -1,7 +1,7 @@
-package com.kdev.samples.ctask.cluster;
+package com.kdev.samples.ctask.lecluster;
 
 import com.hazelcast.core.*;
-import com.kdev.samples.ctask.cluster.task.SingleNodeTask;
+import com.kdev.samples.ctask.lecluster.task.SingleNodeTask;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.HashMap;

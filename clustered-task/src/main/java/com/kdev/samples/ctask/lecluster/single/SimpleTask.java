@@ -1,8 +1,9 @@
-package com.kdev.samples.ctask.cluster.single;
+package com.kdev.samples.ctask.lecluster.single;
 
-import com.kdev.samples.ctask.cluster.task.SingleNodeTask;
+import com.kdev.samples.ctask.lecluster.task.SingleNodeTask;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.Serializable;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -11,7 +12,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * 2018-02-14
  */
 @Slf4j
-public class SimpleTask extends SingleNodeTask {
+public class SimpleTask extends SingleNodeTask implements Serializable{
 
     private static final String TASK_NAME = "SIMPLE TASK";
 

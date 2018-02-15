@@ -1,4 +1,4 @@
-package com.kdev.samples.ctask.cluster.task;
+package com.kdev.samples.ctask.lecluster.task;
 
 /**
  * @author trovo.st@gmail.com

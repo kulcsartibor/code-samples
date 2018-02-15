@@ -1,4 +1,4 @@
-package com.kdev.samples.ctask.cluster.task;
+package com.kdev.samples.ctask.lecluster.task;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
