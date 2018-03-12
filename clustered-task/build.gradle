@@ -28,7 +28,14 @@ dependencies {
 
 	compile group: 'com.hazelcast', name: 'hazelcast-all', version: '3.9.2'
 
+	compile group: 'org.apache.curator', name: 'curator-recipes', version: '4.0.1'
+	compile group: 'org.apache.curator', name: 'curator-x-discovery', version: '4.0.1'
+	compile group: 'org.apache.curator', name: 'curator-x-async', version: '4.0.1'
+
+
 
 	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	testCompile group: 'org.apache.curator', name: 'curator-test', version: '4.0.1'
+
 }

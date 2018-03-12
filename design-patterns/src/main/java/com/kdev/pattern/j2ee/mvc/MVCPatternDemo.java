@@ -17,7 +17,7 @@ public class MVCPatternDemo {
 
         controller.updateView();
 
-        //update model data
+        //update domain data
         controller.setStudentName("John");
 
         controller.updateView();
